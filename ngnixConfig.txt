@@ -1,0 +1,17 @@
+server {
+    listen 8080;
+
+    location / {
+    }
+}
+
+server {
+    location / {
+        proxy_pass http://localhost:8080;
+    }
+
+    location /signin {
+	root www/data;
+	index signin.html;
+    }
+}
