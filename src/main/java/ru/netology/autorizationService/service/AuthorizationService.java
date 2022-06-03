@@ -27,6 +27,10 @@ public class AuthorizationService {
         return userAuthorities;
     }
 
+    public String hello() {
+        return "Hello from app";
+    }
+
     private boolean isEmpty(String str) {
         return str == null || str.isEmpty();
     }
